@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>How Long Until I Get Rich?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Money -->
+    <div class="money-background" id="moneyBackground"></div>
+
+    <!-- Top Ad -->
+    <div class="ad-panel top-ad">
+        Top Ad Space
+    </div>
+
+    <div class="container">
+
+        <div class="top-bar">
+            <input type="text" id="username" placeholder="Enter username">
+            <span class="user-display" id="userDisplay">Anonymous</span>
+        </div>
+
+        <h1>How Long Until I Get Rich?</h1>
+
+        <div class="stats">
+            <div>Predictions Today: <strong id="counter"></strong></div>
+            <div>Your Attempts: <strong id="attempts">0</strong></div>
+            <div>Best Probability: <strong id="bestProb">0%</strong></div>
+            <div>Your Title: <strong id="title">Beginner Investor</strong></div>
+        </div>
+
+        <div class="inputs">
+            <input type="number" id="age" placeholder="Your Age">
+            <input type="number" id="income" placeholder="Dream Income ($)">
+        </div>
+
+        <button id="calcBtn" class="main-btn">Calculate My Financial Destiny</button>
+
+        <div class="loading">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div id="loadingText"></div>
+        </div>
+
+        <div class="result" id="result"></div>
+        <div id="extraButtons" class="extra-buttons"></div>
+
+        <div class="leaderboard">
+            <h3>🏆 Top 100 Attempts</h3>
+            <ol id="attemptLeaderboard"></ol>
+        </div>
+
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-panel bottom-ad">
+        Bottom Ad Space
+    </div>
+
+    <div class="disclaimer">
+        Entertainment only. Not real financial advice or real prediction data.
+    </div>
+
+    <audio id="rareSound">
+        <source src="celebration.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
